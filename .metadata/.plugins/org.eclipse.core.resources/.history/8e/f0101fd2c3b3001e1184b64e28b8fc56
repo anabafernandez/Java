@@ -1,0 +1,25 @@
+package proyectoInicialDeJava;
+
+public class EjercicioDatos {
+
+	public static void main(String[] args) {
+		
+		
+System.out.println("Hola Mundo");
+		
+		
+		/*Comentarios
+		 * multilinea*/
+		
+		//comentarios de una sola linea 
+		
+		byte edad = 15;//Sirve para representar un numero entero 8bits (-128 al 127)
+		
+		System.out.println("Edad del participante"+edad);
+		
+		short usuariosNuevos = 200;//Sirve para representar un numero entero 16 bits (-23768 al 32767)
+		
+		System.out.println("Usuarixs nuevos");
+	}
+
+}
