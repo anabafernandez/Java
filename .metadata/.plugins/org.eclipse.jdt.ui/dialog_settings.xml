@@ -29,6 +29,6 @@
 		<item key="pageIndex" value="2"/>
 	</section>
 	<section name="NewPackageWizardPage">
-		<item key="create_package_info_java" value="false"/>
+		<item key="create_package_info_java" value="true"/>
 	</section>
 </section>
