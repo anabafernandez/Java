@@ -9,10 +9,10 @@ public class LetrasMain {
 		
 		public class Letras {
 			//Para que nuestro usuario Interactue, definimos un Scanner
-			Scanner sacanner = new Scanner (System.in);
+			Scanner scanner = new Scanner (System.in);
 			
 			//Metemos el Scanner dentro de un método
-			public String leerEntrada () {
+			public String leerEntrada() {
 				return Scanner.nextLine();
 				
 				public void mostrarMensaje(String Mensaje) {
