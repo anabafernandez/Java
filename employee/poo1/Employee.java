@@ -11,16 +11,16 @@ public class Employee {
 	 */
 
 	public class Employee {
-		// 1. Atributos o propiedades
-		String nombre;
-		String apellido;
-		int id;
-		double salario;
-		String puesto;
+		// 1. Encapsular atributos o propiedades utilizando un modificador private
+		protected String nombre;
+		protected String apellido;
+		private int id;
+		private double salario;
+		private String puesto;
 		
 		//2. Metodo constructor.Tienen el mismo nombre de la clase, no retorna nada, recibe parametros (atributos) y los asigna a variables del constructor (this)
 		
-		Employee(String nombre,String apellido,int id,double salario,String puesto){
+		Public Employee(String nombre,String apellido,int id,double salario,String puesto){
 			this.nombre=nombre;
 			this.apellido=apellido;
 			this.id=id;
@@ -31,19 +31,19 @@ public class Employee {
 		
 		//3. Metodos de comportamiento
 		
-		void trabajar() {
+		public void trabajar() {
 			System.out.println("Estoy trabajando");
 		}
 		
-		void calcularSalario() {
+		public void calcularSalario() {
 			System.out.println("El salario del empleado es de:" + this.salario+"pesos");
 		}
 		
-		void capacitarse() {
+		public void capacitarse() {
 			System.out.println("El trabajador del puesto "+this.puesto+"se capacita");
 		}
 		
-		void infoGeneral() {
+		public void infoGeneral() {
 			System.out.println("id:" + this.id +"Nombre:" + this.nombre + "Apellido" + this.apellido);
 		}
 		
