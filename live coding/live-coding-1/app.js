@@ -1,25 +1,31 @@
-////PARAMETRO1
-function palabraLarga(str, array) {
-    return array.filter(word => word.length > str.length);
-  }
-  
-  const animales = ['insecto', 'bootcamp', 'mangos', 'reptil', 'mosca', 'escritorio'];
-  const palabraLarga = palabrasLarga('bocina', palabra);
-  console.log(palabraLarga); // Para iterar a traves de los elemento en un array
+//Ana Karen Bailón Fernández
 
-/////PARAMETRO 2
 
-function printArray(array) {
-    const listContainer = document.getElementById('myList'); // Assume there's an element with the id 'myList' in your HTML
-    listContainer.innerHTML = ''; // Clear previous content
-  
-    array.forEach(word => {
-      const listItem = document.createElement('li');
-      listItem.textContent = word;
-      listContainer.appendChild(listItem);
-    });
-  }
-  
-  // EJEMPLO 
-  const myArray = ['insecto', 'bootcamp', 'escritorio'];
-  printArray(myArray);
+// Paso 1
+function PalabrasLargas(inputString, stringArray) {
+  return stringArray.filter(word => word.length > inputString.length);
+}
+
+// Paso 2
+function printArray(stringArray) {
+  const listContainer = document.getElementById('wordList');
+  listContainer.innerHTML = ''; // Limpiar el contenido anterior
+
+  stringArray.forEach(word => {
+    const listItem = document.createElement('li');
+    listItem.textContent = word;
+    listContainer.appendChild(listItem);
+  });
+}
+
+// Bonus - Paso 1
+document.getElementById('submitButton').addEventListener('click', function() {
+  const userInput = document.getElementById('userInput').value;
+  const filteredArray = PalabrasLargas(userInput, miArray); // Cambiado a miArray
+  console.log(miArray);
+  printArray(filteredArray);
+});
+
+// Bonus - Paso 2
+const miArray = ['insecto', 'bootcamp', 'mangos', 'reptil', 'mosca', 'escritorio', 'elefante', 'computadora', 'playa', 'montaña'];
+printArray(miArray);
